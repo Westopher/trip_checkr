@@ -1,0 +1,147 @@
+
+
+// #header{
+//   width:100%;
+//   height:75px;
+//   background-color:#3279b5;
+//   padding:0px 43px;
+//   position: fixed;
+//   top:0px;
+//   left:0;
+//   margin: 0 0 0 px;
+// }
+// #header #logo{
+//   padding-top:40px;
+//   float:left;
+// }
+// #header #main-menu{float:right; padding-top:45px;}
+// #header #main-menu li{
+//   float:left;
+//   list-style:none;
+//   margin-left:27px;
+//   font: 400 16px/20px 'Bree Serif', Georgia, serif;
+// }
+
+
+
+
+
+
+
+
+
+
+td, p.product_index {
+
+  color: red;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 4px;
+        color: rgb(255, 255, 255);
+    background-color: rgb(51, 122, 183);
+    border-color: rgb(46, 109, 164);
+
+}
+
+
+body {
+  background-image: url("http://i1.wp.com/designerfied.com/wp-content/uploads/2012/07/Simple-Pattern-Background-Images-And-PSD-img.jpg?resize=580%2C250");
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 50px;
+
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #FFFFFF;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}

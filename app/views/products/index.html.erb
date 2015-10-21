@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+<tbody class="product_index">
+  <% @products.each do |product| %>
+  <div class="col-md-5">
+   <img src="<%= product.url %>" height="140" width="250">
+   <h3><%= product.name %></h3>
+   <h4>$<%= product.formatted_price %> Per Night</h4>
+   <p><%= product.description %></p> </span>
+   <a class="btn btn-primary"<%= link_to 'Show', product %></span></a>
+   <a class="btn btn-primary"<%= link_to 'Edit', edit_product_path(product) %></a>
+   <a class="btn btn-primary"<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+ </div>    <% end %>
+</tbody>
+</table>
+
+<br>
+
+<!-- <a class="btn btn-primary" <%= link_to 'New Product', new_product_path %></a> -->
