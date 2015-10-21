@@ -26919,3 +26919,1088 @@ ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (154.8ms)
+
+
+Started GET "/" for ::1 at 2015-10-20 22:06:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 58ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-20 22:06:56 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2015-10-20 22:06:57 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (82.0ms)
+  Rendered products/new.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 465ms (Views: 444.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/bootstrap.css" for ::1 at 2015-10-20 22:06:57 -0400
+Processing by ProductsController#show as CSS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 120ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=bootstrap):
+  app/controllers/products_controller.rb:68:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (214.3ms)
+
+
+Started GET "/products/bootstrap.js" for ::1 at 2015-10-20 22:06:58 -0400
+Processing by ProductsController#show as JS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=bootstrap):
+  app/controllers/products_controller.rb:68:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (143.9ms)
+
+
+Started GET "/products" for ::1 at 2015-10-20 22:06:58 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for ::1 at 2015-10-20 22:06:58 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bootstrap.css" for ::1 at 2015-10-20 22:06:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (149.9ms)
+
+
+Started GET "/bootstrap.js" for ::1 at 2015-10-20 22:06:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (154.4ms)
+
+
+Started GET "/bootstrap.css" for ::1 at 2015-10-20 22:06:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (140.4ms)
+
+
+Started GET "/bootstrap.js" for ::1 at 2015-10-20 22:07:00 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.9ms)
+
+
+Started GET "/assets/IMG_3459.jpg" for ::1 at 2015-10-20 22:07:00 -0400
+
+
+Started GET "/assets/IMG_3459.jpg" for ::1 at 2015-10-20 22:07:00 -0400
+
+
+Started GET "/products/8/edit" for ::1 at 2015-10-20 22:07:20 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered products/_form.html.erb (3.4ms)
+  Rendered products/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 73ms (Views: 71.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/8/bootstrap.js" for ::1 at 2015-10-20 22:07:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/products/8/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (70.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (149.0ms)
+
+
+Started PATCH "/products/8" for ::1 at 2015-10-20 22:07:28 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d7Ilv/oBmR6KgVva6r/hhe5hwxDcg6bKERZ28EvOf371W1cb6/EMnz/yJxcYYFNP6kVGUBGUL9W1FReAoJagOA==", "product"=>{"name"=>"Hotel Colorado", "url"=>"data:image/jpeg;base64,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", "description"=>"Snow snow snow!", "price_in_cents"=>"76"}, "commit"=>"Update Product", "id"=>"8"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "products" SET "description" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["description", "Snow snow snow!"], ["updated_at", "2015-10-21 02:07:28.458126"], ["id", 8]]
+  [1m[35m (4.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 12ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/products/8" for ::1 at 2015-10-20 22:07:28 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 8]]
+  Rendered reviews/_form.html.erb (13.6ms)
+  Rendered products/show.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 139ms (Views: 102.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/bootstrap.css" for ::1 at 2015-10-20 22:07:28 -0400
+Processing by ProductsController#show as CSS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=bootstrap):
+  app/controllers/products_controller.rb:68:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (152.8ms)
+
+
+Started GET "/products/bootstrap.js" for ::1 at 2015-10-20 22:07:28 -0400
+Processing by ProductsController#show as JS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=bootstrap):
+  app/controllers/products_controller.rb:68:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (136.1ms)
+
+
+Started GET "/assets/IMG_3459.jpg" for ::1 at 2015-10-20 22:07:29 -0400
+
+
+Started GET "/products" for ::1 at 2015-10-20 22:07:30 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bootstrap.js" for ::1 at 2015-10-20 22:07:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (145.4ms)
+
+
+Started GET "/products/7/edit" for ::1 at 2015-10-20 22:07:33 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered products/_form.html.erb (2.7ms)
+  Rendered products/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/7/bootstrap.js" for ::1 at 2015-10-20 22:07:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/products/7/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.9ms)
+
+
+Started PATCH "/products/7" for ::1 at 2015-10-20 22:07:39 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26r6UuxWLf7JRj2udUlhUSmxc+rKF8l75Xrqmn6UpLdZQ4j2/aa4f3w1QWOHltObLZX2qgcAQGRBeYvqlcx78Q==", "product"=>{"name"=>"Beaver Creek", "url"=>"data:image/jpeg;base64,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", "description"=>"Amazing snow, quaint town.", "price_in_cents"=>"84"}, "commit"=>"Update Product", "id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "products" SET "description" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["description", "Amazing snow, quaint town."], ["updated_at", "2015-10-21 02:07:39.081867"], ["id", 7]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/products/7" for ::1 at 2015-10-20 22:07:39 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?  [["product_id", 7]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered products/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/bootstrap.css" for ::1 at 2015-10-20 22:07:39 -0400
+Processing by ProductsController#show as CSS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=bootstrap):
+  app/controllers/products_controller.rb:68:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (149.0ms)
+
+
+Started GET "/products/bootstrap.js" for ::1 at 2015-10-20 22:07:39 -0400
+Processing by ProductsController#show as JS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=bootstrap):
+  app/controllers/products_controller.rb:68:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.8ms)
+
+
+Started GET "/assets/IMG_3459.jpg" for ::1 at 2015-10-20 22:07:39 -0400
+
+
+Started GET "/products" for ::1 at 2015-10-20 22:07:41 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bootstrap.js" for ::1 at 2015-10-20 22:07:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (72.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (145.9ms)
+
+
+Started DELETE "/products/10" for ::1 at 2015-10-20 22:07:49 -0400
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4PAgWW5szRHVRTNadxRxbMdfp1If/+yzM2IYzm7/QyJiGVL9f5xYkGA2T5eFy8Omw3siEtLoZayXYXm+haecZA==", "id"=>"10"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "products" WHERE "products"."id" = ?  [["id", 10]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 5ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/products" for ::1 at 2015-10-20 22:07:49 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bootstrap.css" for ::1 at 2015-10-20 22:07:49 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (151.2ms)
+
+
+Started GET "/bootstrap.js" for ::1 at 2015-10-20 22:07:50 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (144.1ms)
+
+
+Started GET "/assets/IMG_3459.jpg" for ::1 at 2015-10-20 22:07:50 -0400
+
+
+Started GET "/products" for ::1 at 2015-10-20 22:10:13 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 73ms (Views: 72.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bootstrap.css" for ::1 at 2015-10-20 22:10:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (149.2ms)
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/bootstrap.self-f6fdc7dd90d79791cf18fa157e49148cf8900eadfaa91ec4308b06dc4643e9d7.css?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/bootstrap.min.self-2c354d7c0179bd35563b93633b23ac5fb07c67d531d40a75695bacbd0eadb799.css?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/products.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/1-col-portfolio.self-4916a1d5b161a9fd9297e153a1d733afbe843002c60d3582017202760301d5e9.css?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/scaffold.self-83b741db49389dc7cfdf85bf7537a0219cce48e085c4116afc83d55c9af47c78.css?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/scaffolds.self-52344b21693453337adb3e5229f18ae9ba9039c8ea6c0bc342342094364c32f5.css?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/bootstrap.js" for ::1 at 2015-10-20 22:10:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (147.3ms)
+
+
+Started GET "/assets/application.self-b53ce818c547c37373501238cb1abfe780698f274127e8ffa9623ac327d2fdeb.css?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/assets/IMG_3459.jpg" for ::1 at 2015-10-20 22:10:14 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-10-20 22:10:30 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (5.2ms)
+  Rendered products/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 79ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/bootstrap.js" for ::1 at 2015-10-20 22:10:30 -0400
+Processing by ProductsController#show as JS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=bootstrap):
+  app/controllers/products_controller.rb:68:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.8ms)
+
+
+Started GET "/products" for ::1 at 2015-10-20 22:10:41 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bootstrap.js" for ::1 at 2015-10-20 22:10:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (143.8ms)
+
+
+Started GET "/products/5/edit" for ::1 at 2015-10-20 22:10:44 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered products/_form.html.erb (2.5ms)
+  Rendered products/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/5/bootstrap.js" for ::1 at 2015-10-20 22:10:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/products/5/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (143.4ms)
+
+
+Started GET "/products" for ::1 at 2015-10-20 22:10:47 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bootstrap.js" for ::1 at 2015-10-20 22:10:47 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.0ms)
+
+
+Started GET "/products/2" for ::1 at 2015-10-20 22:10:49 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = ?[0m  [["product_id", 2]]
+  Rendered reviews/_form.html.erb (2.2ms)
+  Rendered products/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 74ms (Views: 71.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/bootstrap.js" for ::1 at 2015-10-20 22:10:50 -0400
+Processing by ProductsController#show as JS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=bootstrap):
+  app/controllers/products_controller.rb:68:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.6ms)
